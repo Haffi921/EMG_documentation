@@ -1,0 +1,16 @@
+from: markdown+superscript
+to: pdf
+
+output-file: index.pdf
+input-file: index.md
+
+variables:
+  block-headings: true
+  documentclass: scrreprt
+  geometry:
+    - margin=1in
+  linestretch: 1.5
+  papersize: a4
+  margin: 1in
+  toc: true
+  toc-depth: 4
