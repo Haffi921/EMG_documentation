@@ -2,7 +2,13 @@ from: markdown+superscript
 to: pdf
 
 output-file: index.pdf
-input-file: index.md
+input-files:
+  - source/index.md
+  - source/theoretical.md
+  - source/AcqKnowledge.md
+  - source/Acq2Bva.md
+  - source/BrainVisionAnalyzer.md
+  - source/R_data_analysis.md
 
 variables:
   block-headings: true
