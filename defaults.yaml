@@ -20,3 +20,5 @@ variables:
   margin: 1in
   toc: true
   toc-depth: 4
+  numbersections: true
+  secnumdepth: 1
