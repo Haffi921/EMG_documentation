@@ -1,1 +1,3 @@
-# EMG documentation
+---
+title: EMG documentation
+...

@@ -1,5 +1,5 @@
-## 5\. R data analysis
-### *Outliers*
+# R data analysis
+## *Outliers*
 There are two *types* of data with which we look for outliers:
 1) The data point itself
 2) the difference between two data points
