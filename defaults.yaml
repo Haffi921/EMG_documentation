@@ -10,6 +10,9 @@ input-files:
   - source/BrainVisionAnalyzer.md
   - source/R_data_analysis.md
 
+include-in-header:
+  - disable_float.tex
+
 variables:
   block-headings: true
   documentclass: scrreprt
