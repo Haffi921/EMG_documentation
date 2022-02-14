@@ -8,8 +8,7 @@ AcqKnowledge can also be used for analysis and has a lot to explore. You can, fo
 
 However, in this documentation we will only discuss the necessary steps to 1) setup, 2) record and 3) save EMG data. We leave learning any more advanced functions and use cases of AcqKnowledge to you the reader (visit Biopac's own [Knowledge Base](https://www.biopac.com/knowledge-base/) for more information)
 
-## *Settings*
-### **MP160**
+## *MP160*
 In order to open AcqKnowledge, a USB lincese dongle needs to be connected to the computer. In order to effectively setup AcqKnowledge for recordings, a data acquisition unit (such as BioPac's MP160) you want to set up needs to be connected to the computer and turned on. The MP160 unit is connected to a computer with a ethernet-to-USB connection, via a ethernet-USB adapter. The MP160 must also be connected to electricity and turned on.
 
 When the MP160 unit (or any other data acquisition unit) is connected, the main AcqKnowledge window will present you with a new menu item in the top bar: `MP160` (see Figure \ref{MP160_menu}). From there you can select `Set Up Data Acquisition` in the drop down menu. The window that will pop up has all the main settings to configure before an experiment. In the default section named `Channels` (seen in the left sidebar) you have three important tabs.
@@ -32,15 +31,15 @@ In the sidebar on the left (where we have `Channels` selected), there are more s
 
 ![Length/Rate \label{sample_rate}](./images/AcqKnowledge/SampleRate.png){width=10cm}
 
-### **New file**
+## *Recording (.acq)*
 Opening AcqKnowledge, you will have to choice to create a new recording or open up an existing one. A new recording can be created with a template file (see below), or without any prior configurations. By default, a recording is not saved to a disk until you manually press `ctrl-s`, or do `File > Save As`. Therefore, it is wise to habitually save the recording manually, and never forget to save immediately after recording has stopped.
 
-### **Template files (.gtl)**
+## *Template files (.gtl)*
 You are able to save a configuration of AcqKnowledge to a `.gtl` file. The configurations include settings on the data acquisition unit, any custom channels (such as for the event markers), and which channels are plotted during recording, the X and Y scales of the plot, etc. It is recommended to configure and standardize `.gtl` file before any experiment. This allows the experimenters to spend the minimum amount of time configuring before pressing `Record`.
 
 > **Note:** When opening a template file, you need to start by manually saving the recording as a new file. The template file only opens up AcqKnowledge with the right configurations but the recording is still an "Untitled" recording.
 
-### **Event Markers**
+## *Event Markers*
 Event markers are signals sent from the experiment program to AcqKnowledge via a 25-pin parallel port cable. The cable is connected to the computer on which the experiment is being run, and to a **Isolated Digital Interface** like BioPac's STP100D (see Figure \ref{STP100D}).
 
 ![STP100D \label{STP100D}](./images/STP100D.jpg){width=10cm}
@@ -69,7 +68,3 @@ Recordings are plotted in real time on your screen. You can choose which channel
 ![Starting Recording \label{start}](./images/AcqKnowledge/AcqKnowledgeStart.png){width=10cm}
 
 ![Stopping Recording \label{stop}](./images/AcqKnowledge/AcqKnowledgeStop.png){width=10cm}
-
-## *Saving*
-
-### **Recording (.acq)**
