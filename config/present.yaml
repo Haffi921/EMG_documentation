@@ -1,0 +1,24 @@
+from: markdown+superscript
+to: pdf
+
+output-file: "docs/Present study.pdf"
+input-files:
+  - source/present/Title.md
+  - source/present/EquipmentOverview.md
+  - source/present/Preparation.md
+
+include-in-header:
+  - disable_float.tex
+
+variables:
+  block-headings: true
+  documentclass: scrreprt
+  geometry:
+    - margin=1in
+  linestretch: 1.5
+  papersize: a4
+  margin: 1in
+  toc: true
+  toc-depth: 4
+  numbersections: true
+  secnumdepth: 1

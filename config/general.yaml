@@ -1,14 +1,14 @@
 from: markdown+superscript
 to: pdf
 
-output-file: index.pdf
+output-file: "docs/General Documentation.pdf"
 input-files:
-  - source/index.md
-  - source/theoretical.md
-  - source/AcqKnowledge.md
-  - source/Acq2Bva.md
-  - source/BrainVisionAnalyzer.md
-  - source/R_data_analysis.md
+  - source/general/Title.md
+  - source/general/Theoretical.md
+  - source/general/AcqKnowledge.md
+  - source/general/Acq2Bva.md
+  - source/general/BrainVisionAnalyzer.md
+  - source/general/R_data_analysis.md
 
 include-in-header:
   - disable_float.tex
