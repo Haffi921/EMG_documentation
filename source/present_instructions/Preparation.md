@@ -4,11 +4,11 @@
 
 - Make sure the EMG Acquisition Unit is plugged in electricity and into the computer
 - _(Optional)_ Make sure the rest of the electrical equipment is connected correctly as stated in the `Equipment Overview` chapter
-  This setup should never be interrupted, so there is no need to do it every day. However, it is good to take a look at the beginning of an experiment run.
+  - This setup should never be interrupted, so there is no need to do it every day. However, it is good to take a look at the beginning of an experiment run.
 - Turn on the EMG Acquisition Unit's Power button
   Small green light turns on
 - Plug BIOPAC USB license key in the acquisition computer on the left
-  **Note:** Don’t lose the little plastic cap!
+  - **Note:** Don’t lose the little plastic cap!
 - Plug the Smart Amplifiers into the Amplifier Input Module.
   - Place the Smart amplifiers in the first and second port on the front side of the EMG
   - Cables are in the top drawer of the shelf
@@ -27,7 +27,7 @@
 - Click on "new experiment"
   - First radio button, usually already selected
 - Choose template → FeedbackXX template.acq (so that the recording is well formatted)
-- Save as "Dokumente" → "Feedback" → "EMG data" as FeedbackXX.acq (until now it was called Untitled1)
+- Save as "Dokumente" → "Feedback" → "EMG data" as Feedback**XX**.acq (until now it was called Untitled1)
   - XX = participant-ID e.g. 02
 - To change the y-axis in the recording, click on the column on
   the right and change "scale" e.g. to 0.5
@@ -46,10 +46,10 @@
 - Put Electrode gel into the syringe
 - Place one side of the Electrode tape on the electrode
   - Align the hole of the tape with the hole in the electrode
-  - Don't take the sticker of the tape's other side
+  - Don't take the sticker of the tape's other side yet
 - Apply the Electrode gel into the holes of the electrodes
   - Use tissues to wipe off any excess gel
-    - Gel should perfectly align with the rim
+  - Gel should perfectly align with the rim
 - Place the prepared electrodes on a piece of tissue
 
 ## The participant has arrived
@@ -60,35 +60,38 @@
 
 3. Ask the participant for the required information (age and gender) and type it into the experiment's dialogue window
 
-   - What should result is the Welcome Screen of the experiment: **Leave it as is!**
+   - What should result is the Welcome Screen of the experiment: **Leave it like that!**
 
 4. Explain to the participant that you are going to place electrodes to their face in order to record facial muscle activation
 
-5. Ask them to take a seat slightly on the side in order to allow you a better angle for the procedure
+5. Ask them to take a seat slightly to the side facing you in order to allow you a better angle for the procedure
 
-   1. Put skin preparation gel on a cotton pad
+   1. Put on the single-use gloves
+   2. Put skin preparation gel on a cotton pad
       - Apply and rub the gel on the relevant area with cotton pad
       - The dead skin-cells will become visible
-      - Make that you:
+      - Make sure that you:
         - ...apply the gel at the complete area
         - ...rub away all the dead skin-cells away from the area
-   2. Open a alcohol wipe pack
-      - Use the alcohol wipe to disinfect the complete area
-   3. Place electrodes on the face (remove stickers beforehand)
+   3. Use the alcohol wipe to disinfect the complete area you just applied the gel to
+   4. Place electrodes on the face (remove stickers beforehand)
       - Correct electrode placement is explained elsewhere...
-   4. Ask the participant to turn their chair back towards the experiment computer
+      - While holding the participant's head in place (ask for permission), lightly yet firmly press on the electrode
+   5. Ask the participant to turn their chair back towards the experiment computer
       - Ask them to make themselves comfortable as they will not be able to move much around after this
-   5. When the participant is ready, clip electrode cables on the electrodes (colours do matter)
-      - Black is for the ground electrode
-      - White and Red are for the muscle electrodes
-   6. Secure cables with the attached clips to the clothes and with pins to the hair
+   6. When the participant is ready, clip electrode cables on the electrodes (colours do matter)
+      - **Black** is for the ground electrode
+      - **White** and **Red** are for the muscle electrodes
+   7. Secure cables with the attached clips to the clothes and with pins to the hair
       - Make sure that the cables don’t dangle in the participant’s face or hang down loosely behind the head
 
 6. In the acquisition computer, start the recording in AcqKnowledge by pressing "Start" (green arrow)
 
-7. Check baseline before starting the experiment
+7. Check baseline and activation before starting the experiment
 
-   - "Please frown a few times, and now please smile, and again"
+   - Ask the participant to stay neutral (to see baseline), and then to frown or to smile (to see the activation on the muscle)
+     - "I'm going to ask you to stay still for a moment"
+     - "Now if you could please frown a few times... And now please smile, and again"
    - Check that everything’s being recorded correctly, that everything stays in place and that the baseline doesn’t include too much noise
    - If there is an unusual amount of noise in the recordings, you will need to reapply the electrodes
      - With new gel, electrode tape, etc.
@@ -96,10 +99,12 @@
 8. Final instructions for the participant
 
    - "If the electrodes feel loose, please tell me"
-   - The experiment should be done sitting as still as possible
+   - Remind the participant that the experiment should be done sitting as "still as possible"
    - The participant should hardly move their head and body during the whole experiment
 
-     - The electrodes will record that too
+     - The electrodes can record any movement of the participant in the seat
+
+   - Tell the participant that they can adjust their seating and any uncomfortableness in between blocks
 
 9. The participant can now start the experiment
 
@@ -135,7 +140,7 @@
 4. Throw away all the trash that has accumulated
 
 5. If you have a new participant, redo the steps outlined in the `Prepare experiment` chapter
-   - Start a new experiment
+   - Start a new experiment and recording
    - Reapply the electrode tape and gel
 
 ## At the end of the day
@@ -143,7 +148,8 @@
 - Clean syringe with water
   - Fill completely and press out several times; don’t use soap!
   - Dry carefully
-- Clean electrodes with cotton swabs (see above) AND clean them under running water, then dry thoroughly.
+- Clean electrodes with cotton swabs (see above) AND clean them under running water.
+  - Then dry thoroughly! Do not leave any moisture on the electrodes as that can corrode them
   - Place the dry and clean electrodes back in their plastic bags
 - Close the AcqKnowledge program and remove the BIOPAC license key
   - Place the license key in the top drawer of the shelf

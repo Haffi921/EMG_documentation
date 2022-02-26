@@ -1,4 +1,4 @@
-docs := general present
+docs := general present present_instructions
 
 all: createDir $(docs)
 
@@ -7,9 +7,3 @@ createDir:
 
 $(docs):
 	pandoc -d config/$@.yaml
-
-# general:
-# 	pandoc -d config/general.yaml
-
-# present:
-# 	pandoc -d config/present.yaml

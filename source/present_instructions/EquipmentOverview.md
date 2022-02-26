@@ -18,6 +18,8 @@
 - **A Smart Amplifier for each muscle recording**
 - **A three point lead for each muscle recording**
 
+![MP160 EMG Acquisition unit \label{MP160}](./images/BioPac/MP160.jpg){width=5cm}
+
 ### The EMG Acquisition unit: MP160
 
 Connected to:
@@ -34,7 +36,7 @@ Function:
 
 > **Note:** The EMG Acquisition unit can be turned on and off. It is recommended to turn the unit off at the end of the day
 
-<!-- TODO: Put image -->
+![AMI100D Amplifier Input Module \label{AMI100D}](./images/BioPac/AMI100D.png){width=5cm}
 
 ### The Amplifier Input Module: AMI100D
 
@@ -49,7 +51,8 @@ Function:
 - Receive data from the Smart Amplifiers
 - Send data to the EMG Acquisition unit
 
-<!-- TODO: Put image -->
+![STP100D Digital Interface \label{STP100D}](./images/BioPac/STP100D.jpg){width=5cm}
+![Parallel Port Cables \label{Parallel}](./images/BioPac/parallelport.jpg){width=5cm}
 
 ### The Digital Interface: STP100D
 
@@ -64,7 +67,7 @@ Function:
 - Receive digital data from the experiment computer
 - Send data to the EMG Acquisition unit
 
-<!-- TODO: Put image -->
+![Smart Amplifiers connected to AMI100D \label{EMG100D}](./images/BioPac/SmartAmp.png){width=10cm}
 
 ### Smart Amplifiers (EMG100D) and corresponding leads
 
@@ -79,7 +82,7 @@ Function:
 - Record voltage readings from electrodes
 - Send data to the Amplifier Input Module
 
-<!-- TODO: Put image -->
+![Electrode Leads with pinch-clip connectors \label{Leads}](./images/BioPac/leads.jpg){width=10cm}
 
 ## Other equipment in the lab:
 

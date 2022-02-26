@@ -1,9 +1,11 @@
 from: markdown+superscript
 to: pdf
 
-output-file: "docs/Present Study - Setup and Analysis.pdf"
+output-file: "docs/Present Study - Instructions.pdf"
 input-files:
-  - source/present/Title.md
+  - source/present_instructions/Title.md
+  - source/present_instructions/EquipmentOverview.md
+  - source/present_instructions/Preparation.md
 
 include-in-header:
   - disable_float.tex

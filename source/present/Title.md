@@ -1,3 +1,3 @@
 ---
-title: Present EMG study documentation
+title: Present EMG Study Setup and Analysis
 ...
