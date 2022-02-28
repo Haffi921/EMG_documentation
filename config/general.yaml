@@ -8,7 +8,6 @@ input-files:
   - source/general/AcqKnowledge.md
   - source/general/Acq2Bva.md
   - source/general/BrainVisionAnalyzer.md
-  - source/general/R_data_analysis.md
 
 include-in-header:
   - disable_float.tex
