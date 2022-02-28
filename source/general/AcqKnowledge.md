@@ -8,7 +8,8 @@ AcqKnowledge can also be used for analysis and has a lot to explore. You can, fo
 
 However, in this documentation we will only discuss the necessary steps to 1) setup, 2) record and 3) save EMG data. We leave learning any more advanced functions and use cases of AcqKnowledge to you the reader (visit Biopac's own [Knowledge Base](https://www.biopac.com/knowledge-base/) for more information)
 
-## *MP160*
+## _MP160_
+
 In order to open AcqKnowledge, a USB lincese dongle needs to be connected to the computer. In order to effectively setup AcqKnowledge for recordings, a data acquisition unit (such as BioPac's MP160) you want to set up needs to be connected to the computer and turned on. The MP160 unit is connected to a computer with a ethernet-to-USB connection, via a ethernet-USB adapter. The MP160 must also be connected to electricity and turned on.
 
 When the MP160 unit (or any other data acquisition unit) is connected, the main AcqKnowledge window will present you with a new menu item in the top bar: `MP160` (see Figure \ref{MP160_menu}). From there you can select `Set Up Data Acquisition` in the drop down menu. The window that will pop up has all the main settings to configure before an experiment. In the default section named `Channels` (seen in the left sidebar) you have three important tabs.
@@ -31,22 +32,25 @@ In the sidebar on the left (where we have `Channels` selected), there are more s
 
 ![Length/Rate \label{sample_rate}](./images/AcqKnowledge/SampleRate.png){width=10cm}
 
-## *Recording (.acq)*
+## _Recording (.acq)_
+
 Opening AcqKnowledge, you will have to choice to create a new recording or open up an existing one. A new recording can be created with a template file (see below), or without any prior configurations. By default, a recording is not saved to a disk until you manually press `ctrl-s`, or do `File > Save As`. Therefore, it is wise to habitually save the recording manually, and never forget to save immediately after recording has stopped.
 
-## *Template files (.gtl)*
+## _Template files (.gtl)_
+
 You are able to save a configuration of AcqKnowledge to a `.gtl` file. The configurations include settings on the data acquisition unit, any custom channels (such as for the event markers), and which channels are plotted during recording, the X and Y scales of the plot, etc. It is recommended to configure and standardize `.gtl` file before any experiment. This allows the experimenters to spend the minimum amount of time configuring before pressing `Record`.
 
 > **Note:** When opening a template file, you need to start by manually saving the recording as a new file. The template file only opens up AcqKnowledge with the right configurations but the recording is still an "Untitled" recording.
 
-## *Event Markers*
+## _Event Markers_
+
 Event markers are signals sent from the experiment program to AcqKnowledge via a 25-pin parallel port cable. The cable is connected to the computer on which the experiment is being run, and to a **Isolated Digital Interface** like BioPac's STP100D (see Figure \ref{STP100D}).
 
 ![STP100D \label{STP100D}](./images/STP100D.jpg){width=10cm}
 
 The experiment program sends 7-bit number to the STP100D device. AcqKnowledge is able to record these bits as digital input of either 0V or 5V. We need to set up a calculation channel that takes this data and processes it back into a 7-bit number.
 
-In order to do that we need to first select the digital channels for acquisition. We select `Acquire` on channels  D8 to D14 (see Figure \ref{digital2}). These are input channels from our STP100D device. Next we need to create a new calculation channel under the "Calculation" tab. Select `Acquire` to create a channel. Then select `Setup` in the top right corner (see Figure \ref{calculation2}). From there you select `Expression`.
+In order to do that we need to first select the digital channels for acquisition. We select `Acquire` on channels D8 to D14 (see Figure \ref{digital2}). These are input channels from our STP100D device. Next we need to create a new calculation channel under the "Calculation" tab. Select `Acquire` to create a channel. Then select `Setup` in the top right corner (see Figure \ref{calculation2}). From there you select `Expression`.
 
 ![Digital Channels selected \label{digital2}](./images/AcqKnowledge/DigitalChannels2.png){width=10cm}
 
@@ -62,9 +66,22 @@ We start by multiplying each channel by the increasing power of 2 (i.e. 2^0^, 2^
 
 ![Calculation Channel Expression \label{calculation3}](./images/AcqKnowledge/CalculationChannels3.png){width=10cm}
 
-## *Recording*
+## _Recording_
+
 Recordings are plotted in real time on your screen. You can choose which channels you want displayed while recording. Hiding a channel does not remove it from the file. You can also change the scale at which the the plot is shown. The X axis is for time, and the Y axis is the voltage amplitude. Starting and stopping can be done simply with the corresponding button at the top-left corner (see Figures \ref{start} and \ref{stop})
 
 ![Starting Recording \label{start}](./images/AcqKnowledge/AcqKnowledgeStart.png){width=10cm}
 
 ![Stopping Recording \label{stop}](./images/AcqKnowledge/AcqKnowledgeStop.png){width=10cm}
+
+## _Changing your view_
+
+As mentioned before, you are able to change how the data is represented to you (even while recording; although it's recommended to minimize your interaction with the software while recording).
+
+The mechanisms of changing the X and Y scales can be a little confusing. To change them, you simple left-click the numbers on the relevant scale.
+
+**On the Y scale**, are presented with a window to select a numerical value for _scale_ and _midpoint_. The scale value represents, **not** the total size of the scale, but the size of a single division of the scale (of which there are four). The midpoint is the number which stays in the middle of the Y scale. So, selecting the scale value `1` and midpoint `0`, you will get the scale: `[-2, -1, 0, 1, 2]`.
+
+There is also the option to have _adaptive scaling_, which means the scale will adjust to the highest and lowest values currently presented.
+
+**On the X scale**, you similarly have the time scale for each division (out of 4). Instead of _midpoint_ you have _initial time offset_, which is the position of the scale at the left-end of the X axis. So, selecting the scale value `10 sec` and initial time offset at `0`, you will get `[0, 10, 20, 30, 40]`.

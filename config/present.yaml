@@ -4,6 +4,10 @@ to: pdf
 output-file: "docs/Present Study - Setup and Analysis.pdf"
 input-files:
   - source/present/Title.md
+  - source/present/AcqKnowledge.md
+  - source/present/Acq2Bva.md
+  - source/present/BrainVisionAnalyzer.md
+  - source/present/R_data_analysis.md
 
 include-in-header:
   - disable_float.tex
