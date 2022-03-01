@@ -63,6 +63,8 @@ expected_nr_markers=4818
 "60" = "Practice Block End"
 ```
 
+Notes:
+
 - The `acq_folder` and `output_folder` are set to `acq_data` and `bva_data`, respectively. Recordings from the `acq_data` folder are read and transformed into data files saved in `bva_data`.
 
 - We only select the muscle readings, which are the first two channels (0 and 1). We rename them "EMG_Corr" and "EMG_Zygo", respectively.

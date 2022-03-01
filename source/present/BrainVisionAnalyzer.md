@@ -1,6 +1,6 @@
 ## BrainVision Analyzer
 
-In BrainVision Analyzer, we construct a processing pipeline from raw data to final dataset with history nodes. We start by constructing this pipeline on one recording. These history nodes can then be saved in a history file, in order to apply them to all of the recordings together.
+In BrainVision Analyzer, we construct a processing pipeline from raw data to final dataset with history nodes. We start by constructing this pipeline on one recording. These history nodes can then be saved in a history template, in order to apply them to all of the recordings together.
 
 ### History Template Overview
 
@@ -50,10 +50,10 @@ Select `Transformation` > `Segment Analysis Functions` > `Baseline Correction`. 
 
 ![Baseline Correction \label{baseline}](./images/BVA/baseline.png){width=5cm}
 
-5. Lastly, we export this data to a `csv` file. We do this using a macro called `ExportBinsCSV.vabs`. We run this the same way as before (see 3. above). Again, we get a window for settings. We can select the channels, startpoint, and interval. Additionally, we can select the `Filename` and choose whether to write the file only when applying a history file (most of the time you want to select this). The resulting file will be saved under `bva_export`.
+5. Lastly, we export this data to a `csv` file. We do this using a macro called `ExportBinsCSV.vabs`. We run this the same way as before (see 3. above). Again, we get a window for settings. We can select the channels, startpoint, and interval. Additionally, we can select the `Filename` and choose whether to write the file only when applying a history template (most of the time you want to select this). The resulting file will be saved under `bva_export`.
 
 We choose both channels, startpoint at datapoint 1 and interval at 200 datapoints. What we name the file is unimportant, but we keep the default name `ExportBinsCSV`.
 
-We also check `Only write data when applying node`. **This is important!** What happens is that when you run the macro for the first time (while you are constructing the pipeline), no data will be exported. Then you save the pipeline as a history file and delete the pipeline off the data file. Then you apply the history file on all of the data files together. Only then will the data be exported. If you don't select this option, the recording you construct the pipeline on will appear two times in the data.
+We also check `Only write data when applying node`. **This is important!** What happens is that when you run the macro for the first time (while you are constructing the pipeline), no data will be exported. Then you save the pipeline as a history template and delete the pipeline off the data file. Then you apply the history template on all of the data files together. Only then will the data be exported. If you don't select this option, the recording you construct the pipeline on will appear two times in the data.
 
 ![Export CSV \label{export}](./images/BVA/export.png){width=5cm}

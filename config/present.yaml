@@ -7,7 +7,7 @@ input-files:
   - source/present/AcqKnowledge.md
   - source/present/Acq2Bva.md
   - source/present/BrainVisionAnalyzer.md
-  - source/present/R_data_analysis.md
+  - source/present/DataAnalysis.md
 
 include-in-header:
   - disable_float.tex
